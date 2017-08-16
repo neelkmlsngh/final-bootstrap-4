@@ -1,0 +1,334 @@
+<!-- Starting the html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- starting the head section where the file of cdn is imported -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="image/unnamed.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>WeatherStatus</title>
+</head> <!-- end of head tag -->
+
+<!-- starting the body tag -->
+<body class="container bckgrd">
+	<!-- pre class will create a block in the background of Header and the jumbotron will create a box in background and make the font big -->
+    <pre class="text-center"><h1 class="jumbotron news">WeatherStatus</h1></pre>
+    <!-- starting of the nav bar -->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">WeatherStatus</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Global Weather</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Your City...">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- end of nav bar -->
+    <!-- starting of carousel  -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <a href="#"><img class="d-block img-fluid" src="image/weather1.jpg" alt="First slide"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>New Delhi</h3>
+                        <p>32<sup>0</sup> C</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img class="d-block img-fluid" src="image/unnamed2.jpg" alt="Second slide" ></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Kolkata</h3>
+                        <p>35<sup>0</sup> C</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img class="d-block img-fluid" src="image/unnamed3.jpg" alt="Third slide" ></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Mumbai</h3>
+                        <p>27<sup>0</sup> C</p>
+                    </div>
+                </div>
+            </div>
+           	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    					<span class="sr-only">Previous</span>
+  					</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+        </div>
+        <!-- end of the carousel -->
+    <pre><h3 class="trend">Trending...</h3></pre>
+    <!-- start of row which will make divide itself in three column -->
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+            <a href="#" target="_blank">
+        			<img src="image/unnamed4.jpg" alt="Lights" width="100%">
+        			<div class="caption">
+            			<h5>New York: 25<sup>0</sup> C</h5>
+        			</div>
+       		 	</a>
+        </div>
+        <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+            <a href="#" target="_blank">
+                <img src="image/unnamed5.jpg" width="100%">
+                <div class="caption">
+                    <h5>Paris: 26<sup>0</sup> C</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+            <a href="#"><img src="image/unnamed6.png" width="100%">
+    				<h5>London: 25<sup>0</sup> C</h5>
+    			</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- starting of row which will divide itself in two col -->
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
+            <a href="#"><img src="image/unnamed7.jpg" width="90%" height="100%">
+    		</a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
+            <h5><pre class="te">NEW DELHI: Delhi woke up to a rainy Thursday
+morning.MeT department has said the capital
+received 25.8 mm rainfall till 8:30 am. The
+minimum temperature was recorded 25.2 
+degrees celsius,two notches below the 
+season's average. With the progression of 
+the day, city folk began making way to work
+and pictures describing their complaints 
+started flooding the internet, including 
+complaints about water logging and traffic
+congestion.Delhi Traffic police's twitter 
+handle gave out advisories as well.Traffic
+remained heavy in South Delhi's Vayusenabad.
+Their helpline received over 70 complaints of 
+waterlogging, while many traffic signals also
+stopped functioning due to the rain.
+A senior Traffic police official said that 
+most of the complaints were related to South
+Delhi neighbourhoods such as Nizammudin, 
+Malviya Nagar and Okhla, among others. Over
+20 complaints were reported from East Delhi 
+too."Such was the traffic jam due to the 
+water logging that I was stuck in the Lajpat
+Nagar-Ashram stretch for one-and-a-half hours.
+It felt as if no cars were moving. If such is
+the condition then better Delhi does not
+receive rain," PR professional Govind Pradhan,
+whose office is in Noida, told IANS.</pre></h5>
+        </div>
+    </div><pre>
+    	
+
+    </pre>
+    <div class="row">
+        
+        <h3><a href="#">
+        	As Heavy Rain Awash Delhi, Twitteratti Share Their Waterlogging Tales</a></h3>
+        <h3><a href="#">Heavy Rains Continue To Lash Mumbai Metropolitan Region For Fourth Day</a></h3>
+        <h3><a href="#">Kolkata Extended Forecast with high and low temperatures</a></h3>
+        <h3><a href="#">Chennai To Receive Light Rains, Good Showers Over Interior Tamil Nadu</a></h3>
+        <h3><a href="#">Patna may have Thunderstorms in the evening with fewer in the evening.</a></h3>
+        <h3><a href="#">Ranchi Extended Forecast with high and low temperatures</a></h3>
+        <h3><a href="#">Bhuvneswar Extended Forecast with high and low temperatures</a></h3>
+        <h3><a href="#">Bhopal Extended Forecast with high and low temperatures</a></h3>
+        <h3><a href="#">Hyderabad Extended Forecast with high and low temperatures</a></h3>
+        
+    </div>
+    <p>
+    <!-- button for collapse -->
+        <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Get More News
+        </button>
+    </p>
+    <!-- starting tag for collapse -->
+    <div class="collapse" id="collapseExample">
+        <div class="card card-block">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                    <a href=""><img src="image/maxico.jpg">
+    					<div class="caption">
+            				<h5>Maxico Weather</h5>
+        				</div>
+        			</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                    <a href=""><img src="image/seoul.jpg">
+    					<div class="caption">
+            				<h5>Seoul Weather</h5>
+        				</div>
+        			</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                    <a href=""><img src="image/slovenia.jpg">
+    					<div class="caption">
+            				<h5>Slovenia.jpg</h5>
+        				</div>
+        			</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                    <a href=""><img src="image/poland.jpg">
+	    					<div class="caption">
+	            				<h5>Poland Weather</h5>
+	        				</div>
+	        			</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                    <a href=""><img src="image/nepal1.jpg">
+	    					<div class="caption">
+	            				<h5>Nepal Weather</h5>
+	        				</div>
+	        		</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                    <a href=""><img src="image/usa.jpg">
+	    					<div class="caption">
+	            				<h5>USA Weather</h5>
+	        				</div>
+	        		</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                    <a href=""><img src="image/neatherland.jpg">
+    					<div class="caption">
+            				<h5>Neatherland Weather</h5>
+        				</div>
+        			</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                    <a href=""><img src="image/england.jpg">
+    					<div class="caption">
+            				<h5>England Weather</h5>
+        				</div>
+        			</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4">
+                    <a href=""><img src="image/Canada.jpg">
+    					<div class="caption">
+            				<h5>Canada Weather</h5>
+        				</div>
+        			</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of collapse tag-->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination right">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="second.html">Next</a></li>
+        </ul>
+    </nav>
+    <!-- Starting of footer -->
+    <div class="footer foot">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
+                <ul class="uul">
+                    <li>
+                        <h3>North</h3></li>
+                    <li><a href="#">New Delhi</a></li>
+                    <li><a href="#">Jammu&Kashmir</a></li>
+                    <li><a href="#">Punjab</a></li>
+                    <li><a href="#">Uttrakhand</a></li>
+                    <li><a href="#">Uttar Pradesh</a></li>
+                    <li><a href="#">GST</a></li>
+                </ul>
+                <ul class="uul">
+                    <li>
+                        <h3>East</h3></li>
+                    <li><a href="#">Bihar</a></li>
+                    <li><a href="#">West Bengal</a></li>
+                    <li><a href="#">Odisha</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
+                <ul class="uul">
+                    <li>
+                        <h3>West</h3></li>
+                    <li><a href="#">Maharastra</a></li>
+                    <li><a href="#">Goa</a></li>
+                    <li><a href="#">Gujrat</a></li>
+                    <li><a href="#">Daman/a></li>
+                    <li><a href="#">Dadra&Nagar Haveli</a></li>
+                    <li><a href="#">BJGPH</a></li>
+                </ul>
+                <ul class="uul">
+                    <li>
+                        <h3>South</h3></li>
+                    <li><a href="#">Tamilnadu</a></li>
+                    <li><a href="#">Karnatka</a></li>
+                    <li><a href="#">Kerla</a></li>
+            </div>
+        </div>
+        Follow Us On
+        <div class="row">
+            <div class="col-md-1">
+                <a href="#"><img src="image/W7gYg.jpg" width="50%"></a>
+            </div>
+            <div class="col-md-1">
+                <a href="#"><img src="image/WhatsApp_Logo_6.png"  width="50%"></a>
+            </div>
+            <div class="col-md-1">
+                <a href="#"><img src="image/ig-logo-email.png" width="50%"></a>
+            </div>
+            <div class="col-md-1">
+                <a href="#"><img src="image/twitter_318-136405.jpg" width="50%"></a>
+            </div>
+            <div class="col-md-1">
+                <a href="#"><img src="image/linkedin-logo-copy.png" width="50%"></a>
+            </div>
+            <div class="col-md-1">
+                <a href="#"><img src="image/YouTube-icon-400x400.png" width="50%"></a>
+            </div>
+            <div class="col-md-6">
+                <p>Developed By: Neel kamal Singh</p>
+                <p>Contact information:
+                    <a href="#">neel.5.kamal@niit-tech.com</a>
+                    <br>
+                    <br>
+                    <small>&copy; 2017  All rights reserved.</small>
+            </div>
+        </div>
+    </div>
+    <!-- end of footer -->
+</body>
+</html>

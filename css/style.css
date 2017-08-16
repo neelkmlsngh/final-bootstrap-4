@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+/*it will change the background color of the page*/
+.bckgrd{
+	background-color: black;
+}
+/*it will fit a background image in background of header*/
+.news{
+	background-image:url(../image/patnitop.jpg);
+	color:#FFF;
+	font-size:70px;
+}
+/*it will give a margin of 20 px to the trend*/
+.trend{
+	margin-left:20px;
+}
+/*it will change the color*/
+.gujrat{
+	color:#000;
+}
+/*it will change the color and align the text right*/
+.pm{
+	color:#000;
+	text-align:right;
+}
+/*it will change the color*/
+.got{
+	color:#000;
+}
+.tempcolor{
+	color: white;
+}
+/*it will align the text to center*/
+.page{
+	text-align: center;
+}
+/*it will change the color*/
+.chinese{
+	color: #000;
+}
+/*it will make the background color of footer gray*/
+.foot{
+	background-color: #514B4B;
+}
+/*it will remove the bullets from list*/
+.uul{
+  list-style-type: none;
+}
+/*it will change the color white*/
+.te{
+	color: white;
+}
+/*it will change the color*/
+.para{
+	color: white;
+}
+/*it will change the background color*/
+.foots{
+	background-color: #594545;
+}
+/*it will shift the pagination to the center*/ 
+.pagination {
+   justify-content: center;
+}
+
+html{
+	font-size: 8px;
+}
+@media (min-width: 33.9em) { 
+
+         html {
+        font-size: 10px;
+      }
+
+
+ }
+/**
+ * Small devices (phones, tablets less than 48em)
+  */
+@media (min-width: 47.9em) {
+     html {
+    font-size: 12px;
+  }
+}
+
+/**
+ * Medium devices (tablets, small laptops less than 62em)
+ 
+ */
+@media (min-width: 61.9em) {
+    html {
+    font-size: 14px;
+  }
+
+ }
+
+/**
+ * Large devices (desktops, screens less than 75em)
+ * @param  {[type]} max-width: 74.9em        [description]
+ * @return {[type]}            [description]
+ */
+@media (min-width: 74.9em) {
+      
+html {
+    font-size: 16px;
+  }}
+  
+
